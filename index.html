@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This application allows you to calculate stock averages">
+  <meta name="keywords" content="Indian stock market, average calculator, stock calculator">
+  <meta name="author" content="John Doe">
+  <title>Indian Stock Market Average Calculator</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <header>
+          <h2 class="heading">Indian Stock Market Average Calculator</h2>
+        </header>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 st">
+        <h4>First Buy</h4>
+        <hr>
+        <div class="form-group">
+          <label for="units1">Units</label>
+          <input class="form-control" type="number" id="units1" placeholder="Enter units for first buy" autocomplete="off" />
+          <span id="error1" class="error"></span>
+        </div>
+        <div class="form-group">
+          <label for="Price1">Price</label>
+          <input class="form-control" type="number" id="Price1" placeholder="Enter price for first buy" autocomplete="off" />
+          <span id="error2" class="error"></span>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 st">
+        <h4>Second Buy</h4>
+        <hr>
+        <div class="form-group">
+          <label for="units2">Units</label>
+          <input class="form-control" type="number" id="units2" placeholder="Enter units for second buy" autocomplete="off" />
+          <span id="error3" class="error"></span>
+        </div>
+        <div class="form-group">
+          <label for="Price2">Price</label>
+          <input class="form-control" type="number" id="Price2" placeholder="Enter price for second buy" autocomplete="off" />
+          <span id="error4" class="error"></span>
+        </div>
+      </div>
+      <div class="col-md-12 st">
+        <h4 id="result"></h4>
+      </div>
+      <div class="col-md-12 st">
+        <button class="btn btn-primary" onclick="getAverage()">Calculate Average</button>
+        <button class="btn btn-secondary" onclick="clearFields()">Clear Fields</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      &copy; 2024 | Free to use, share, or modify.
+    </div>
+  </footer>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
