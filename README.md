@@ -1,1 +1,0 @@
-# Indian-Stock-Market-Average-Calculator
